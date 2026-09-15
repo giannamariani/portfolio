@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gianna's Portfolio </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand-block">
+          <p class="brand brand-title">Gianna Mariani</p>
+          <p class="brand-role">Art Director</p>
+        </div>
+
+        <nav class="menu">
+          <a class="menu-link" href="#work">Work</a>
+          <a class="menu-link" href="experience.html">Experience</a>
+          <a class="menu-link" href="about-me.html">About Me</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- <section class="hero container" id="about">
+        <div class="hero-copy">
+          <p class="eyebrow">Creative portfolio</p>
+          <h1>Build something memorable.</h1>
+          <p class="lead">
+            A modern portfolio layout for showcasing your work, story, and standout projects.
+          </p>
+          <div class="actions">
+            <a href="#work" class="primary-btn">View work</a>
+            <a href="#contact" class="secondary-btn">Contact</a>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="image-frame">
+            <img id="heroImage" src="" alt="Featured project" />
+          </div>
+        </div>
+      </section> -->
+
+      <section class="gallery container" id="work">
+        <div class="section-heading">
+          <!-- <p class="eyebrow">Selected projects</p> -->
+          <h1>Featured work</h1>
+        </div>
+        <div id="cardGrid" class="card-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container footer-inner">
+        <p>© 2026 Gianna Mariani</p>
+        <a href="mailto:giannamariani@icloud.com">giannamariani@icloud.com</a>
+      </div>
+    </footer>
+
+    <div id="projectModal" class="project-modal" aria-hidden="true">
+      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button id="closeModal" class="close-modal" aria-label="Close">×</button>
+        <img id="modalImage" src="" alt="" />
+        <div class="modal-copy">
+          <h2 id="modalTitle"></h2>
+          <p id="modalCaption"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js.js?v=20260914-1" defer></script>
+  </body>
+</html>
