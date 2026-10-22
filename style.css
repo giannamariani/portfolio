@@ -284,6 +284,16 @@ img {
   text-align: center;
 }
 
+.about-headshot {
+  width: min(240px, 100%);
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 58%;
+  border: 4px solid #f4efeb;
+  border-radius: 12px;
+  box-shadow: 0 14px 30px rgba(12, 22, 36, 0.32);
+}
+
 .contact-list {
   display: flex;
   flex-direction: column;
@@ -525,6 +535,10 @@ img {
 
   .card-grid {
     grid-template-columns: 1fr;
+  }
+
+  .card:first-child .card-image {
+    object-position: left center;
   }
 
   .campaign-gallery {
